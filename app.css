@@ -1,0 +1,112 @@
+/* * {
+  background-color:  cyan;
+} */
+
+/* Whole body */
+body {
+  background-color: #fefffe;
+}
+
+/* All buttons */
+button {
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+/* h1s and h2s */
+h1,
+h2 {
+  color: #1d3557;
+}
+
+/* This is an id --> id="signup" */
+#signup {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+/* All contents of span */
+span {
+  color: #457b9d;
+}
+
+/* This is a class --> class="tag" */
+.tag {
+  background-color: #e63946;
+  color: #f1faee;
+  font-size: 16;
+}
+
+/* all <a> in a single class of .post */
+.post a {
+  color: #457b9d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Descendant - all <a>'s nested inside a <footer> */
+footer a {
+  color: #e63946;
+}
+
+/* Selects a button that immediately precedes an h2 */
+h2 + button {
+  font-size: 20px;
+}
+
+/* Select only an <a> that is a direct child of a <footer> element */
+footer > a {
+  color: #457b9e;
+}
+
+/* Select all input elements where the type attribute is set to "password" */
+input[type="password"] {
+  color: greenyellow;
+}
+
+/* Select all a elements where the href attribute is set to "google" */
+a[href*="google"] {
+  color: magenta;
+}
+
+/* Pseudo CLASS hover changes properties after hovered */
+/* One : */
+.post button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post button:active {
+  background-color: #02c39a;
+}
+
+.post:nth-of-type(2n) {
+  background-color: #dfe8dc;
+}
+
+/* Psuedo ELEMENTS first letter changes size */
+/* Two :: */
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::first-line {
+  color: purple;
+}
+
+p::selection {
+  background-color: #fcbf49;
+}
+
+button:hover {
+  background-color: olive;
+}
+
+/* p::before {
+  content: "hello";
+  background: red;
+} */
