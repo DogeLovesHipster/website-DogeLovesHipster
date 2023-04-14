@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import Contact from './contact'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
@@ -16,6 +18,7 @@ export default function Home() {
       </header>
       <div className={styles.description}>
       </div>
+      <Link href="/contact"><a>Contact</a></Link>
       <footer>
         <p>Footer Goes here</p>
       </footer>
