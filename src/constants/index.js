@@ -15,11 +15,8 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
   nasa,
-  tesla,
-  shopify,
+  sou,
   carrent,
   jobit,
   tripguide,
@@ -131,7 +128,7 @@ const experiences = [
   {
     title: "Lab and Classroom Tech",
     company_name: "Southern Oregon University",
-    icon: tesla,
+    icon: sou,
     iconBg: "#E6DEDD",
     date: "Sept 2022 - Present",
     points: [
@@ -144,7 +141,7 @@ const experiences = [
   {
     title: "Social Media and Marketing Admin Assistant",
     company_name: "Southern Oregon University",
-    icon: shopify,
+    icon: sou,
     iconBg: "#383E56",
     date: "Oct 2019 - Present",
     points: [

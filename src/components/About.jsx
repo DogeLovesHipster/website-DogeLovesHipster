@@ -47,11 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+      Currently enrolled with a major in Environmental Science and Policy with a minor in Computer Science. My focus is on ArcGIS encoding and in-depth web development with my past experience in graphic design and computer literacy skills. Though, I'm fairly open to beginning new projects, developing new skills, enhancing my current skills, and discovering my new passions in the world of technology.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
