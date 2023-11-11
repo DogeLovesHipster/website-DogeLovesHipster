@@ -1,5 +1,4 @@
 # Step 1: Use the official Node.js 18 image as a builder stage.
-# You may choose a different tag if you need a specific Node version.
 FROM node:18 AS builder
 
 # Set the working directory in the container
@@ -16,6 +15,9 @@ COPY . .
 
 # Build the application
 RUN npm run build
+
+# Manually copy the desktop_pc directory to the dist directory
+RUN cp -r public/desktop_pc dist/desktop_pc
 
 # Step 2: Use the Nginx image to serve the static content
 FROM nginx:stable-alpine
