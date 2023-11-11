@@ -23,6 +23,9 @@ FROM nginx:stable-alpine
 # Copy the built assets from the builder stage to the nginx server directory
 COPY --from=builder /app/dist /usr/share/nginx/html
 
+# Set Nginx to listen on the appropriate port
+RUN sed -i 's/listen  .*/listen 8080;/g' /etc/nginx/conf.d/default.conf
+
 # Expose the port nginx is reachable on
 EXPOSE 8080
 
