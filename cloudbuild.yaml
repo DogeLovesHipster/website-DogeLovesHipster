@@ -1,16 +1,16 @@
 steps:
   # Define your build steps here
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/my-image', '.']
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/my-image", "."]
 
 options:
   logging: CLOUD_LOGGING_ONLY
 
 # Optional: if using a specific logs bucket
-logsBucket: 'gs://my-project-logs-bucket'
+logsBucket: "gs://my-project-logs-bucket"
 
 # Optional: if using a specific service account
-serviceAccount: 'projects/my-project-id/serviceAccounts/my-service-account-email'
+serviceAccount: "projects/my-project-id/serviceAccounts/my-service-account-email"
 
 images:
-  - 'gcr.io/$PROJECT_ID/my-image'
+  - "gcr.io/$PROJECT_ID/my-image"
