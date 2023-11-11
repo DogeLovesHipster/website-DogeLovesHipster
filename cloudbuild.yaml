@@ -6,11 +6,5 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
 
-# Optional: if using a specific logs bucket
-logsBucket: "gs://my-project-logs-bucket"
-
-# Optional: if using a specific service account
-serviceAccount: "projects/my-project-id/serviceAccounts/my-service-account-email"
-
 images:
   - "gcr.io/$PROJECT_ID/my-image"
