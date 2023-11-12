@@ -10,7 +10,6 @@ import {
   reactjs,
   tailwind,
   nodejs,
-  docker,
   nasa,
   sou,
   carrent,
@@ -92,10 +91,6 @@ const technologies = [
   {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
   {
     name: "Python",

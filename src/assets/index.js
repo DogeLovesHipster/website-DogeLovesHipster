@@ -8,7 +8,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
@@ -42,7 +41,6 @@ export {
   menu,
   close,
   css,
-  docker,
   html,
   cpp,
   python,
