@@ -8,12 +8,8 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
-  git,
-  figma,
   docker,
   nasa,
   sou,
@@ -21,6 +17,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  cpp,
+  rLogo,
+  python,
+  illustrator,
+  photoshop,
+  premierePro,
+  afterEffects,
 } from "../assets";
 
 export const navLinks = [
@@ -79,36 +82,48 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "R",
+    icon: rLogo,
+  },
+  {
+    name: "c++",
+    icon: cpp,
+  },
+  {
+    name: "Adobe Illustrator",
+    icon: illustrator,
+  },
+  {
+    name: "Adobe Photoshop",
+    icon: photoshop,
+  },
+  {
+    name: "Adobe Premiere Pro",
+    icon: premierePro,
+  },
+  {
+    name: "Adobe After Effects",
+    icon: afterEffects,
   },
 ];
 
@@ -185,20 +200,20 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Denny's Scalper Bot",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "My attempt at getting a The Everyday Value Tee Scalper Bot",
     tags: [
       {
-        name: "react",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Puppeteer",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "npm",
         color: "pink-text-gradient",
       },
     ],
@@ -206,20 +221,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Discord Wordle Bot",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A fun project that taught me a method of implementing a Discord bot (in this Wordle since that was trendy).",
     tags: [
       {
-        name: "react",
+        name: "C++",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Makefile",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Discord API",
         color: "pink-text-gradient",
       },
     ],
@@ -227,21 +242,17 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "ES386 R Final",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This was my final exam work for my ES class teaching me about R. I think I can confidently say that I enjoy Python way more, but I still think R is pretty neat on quick data science stuff. Just thought I'd leave this repo up to show that I think I know how R works. At least enough to print hello world!",
     tags: [
       {
-        name: "nextjs",
+        name: "R",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Data Analysis",
         color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
       },
     ],
     image: tripguide,
