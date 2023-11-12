@@ -21,6 +21,7 @@ const ExperienceCard = ({ experience }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
+      skills={experience.skills}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -52,6 +53,11 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      <p
+          className='font-semibold text-center text-pink-300'
+        >
+        {experience.skills}
+      </p>
     </VerticalTimelineElement>
   );
 };
