@@ -23,6 +23,8 @@ import {
   photoshop,
   premierePro,
   afterEffects,
+  github,
+  linkedin,
 } from "../assets";
 
 export const navLinks = [
@@ -121,7 +123,8 @@ const experiences = [
     icon: nasa,
     iconBg: "#383E56",
     date: "Oct 2023 - Present",
-    skills: "Google Earth Engine · JavaScript · R (Programming Language) · Remote Sensing · Data Analysis · Python (Programming Language)",
+    skills:
+      "Google Earth Engine · JavaScript · R (Programming Language) · Remote Sensing · Data Analysis · Python (Programming Language)",
     points: [
       "Collaborated with various universities to handle research data, performing a comprehensive analysis of the carbon export from rivers to coastal oceans.",
       "Utilized satellite remote sensing and programmed datasets of surface reflectance from U.S. rivers in Javascript, contributing to the development of a model that incorporates data and hydrology to estimate fluxes.",
@@ -134,7 +137,7 @@ const experiences = [
     icon: sou,
     iconBg: "#E6DEDD",
     date: "Sept 2022 - Present",
-    skills:"Communication · Mac OS · Windows OS · Problem Solving",
+    skills: "Communication · Mac OS · Windows OS · Problem Solving",
     points: [
       "Coordinated with faculty and IT staff to identify and implement new technology solutions that enhance learning experiences.",
       "Managed software installations and updates on lab computers, ensuring compatibility and optimal performance for hundreds of machines across the campus.",
@@ -148,7 +151,8 @@ const experiences = [
     icon: sou,
     iconBg: "#383E56",
     date: "Oct 2019 - Present",
-    skills: "Social Media Management · Marketing · Adobe Illustrator · Adobe Photoshop · Adobe Premiere Pro · Self-management",
+    skills:
+      "Social Media Management · Marketing · Adobe Illustrator · Adobe Photoshop · Adobe Premiere Pro · Self-management",
     points: [
       "Served as the administrative assistant of graphic design, managing and updating visual content for all Southern Oregon University Housing operations, events, and informational materials using Adobe Creative Cloud programs.",
       "Revamped all housing floor plan documents, covering thousands of square feet of property within one week. This initiative provided hundreds of students with enhanced documents and resulted in significant cost savings for the university.",
@@ -158,14 +162,12 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-];
+const testimonials = [];
 
 const projects = [
   {
     name: "Denny's Scalper Bot",
-    description:
-      "My attempt at getting a The Everyday Value Tee Scalper Bot",
+    description: "My attempt at getting a The Everyday Value Tee Scalper Bot",
     tags: [
       {
         name: "Javascript",
@@ -223,4 +225,17 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const contact = [
+  {
+    name: "Github",
+    link: "https://github.com/DogeLovesHipster",
+    icon: github,
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/mendoza-sergio",
+    icon: linkedin,
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, contact };
