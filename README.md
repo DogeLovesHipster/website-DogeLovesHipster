@@ -1,5 +1,7 @@
 # Website: DogeLovesHipster
 
+### This is a work in progress currently! Thanks for your patience!
+
 I did actually decide to go ahead and make this public to demostrate the libraries and approach I took to make this website. This repo has an automatic deployement system that allows my github pushes to update my website that is being honest on Google Cloud. No need to complicate things!
 
 ## Introduction
