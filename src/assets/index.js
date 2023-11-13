@@ -27,9 +27,9 @@ import python from "./tech/python.png";
 import nasa from "./company/nasa.png";
 import sou from "./company/sou.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import dennys from "./dennys_everyday.png";
+import wordle from "./discord_wordle.png";
+import rFinal from "./es386Final.png"
 
 export {
   logo,
@@ -58,7 +58,7 @@ export {
   threejs,
   nasa,
   sou,
-  carrent,
-  jobit,
-  tripguide,
+  dennys,
+  wordle,
+  rFinal,
 };
