@@ -67,7 +67,6 @@ yarn-error.log*
 
 # Ignore Gatsby files
 .cache/
-public
 
 # Ignore Next.js specific files
 .next/
