@@ -1,19 +1,19 @@
 steps:
   # Define your build steps here
-  - name: "gcr.io/cloud-builders/docker"
+  - name: 'gcr.io/cloud-builders/docker'
     args:
-      - "build"
-      - "-t"
-      - "gcr.io/$PROJECT_ID/my-image:latest"  # Use "latest" as the tag to always get the latest image
-      - "."
-a
-  - name: "gcr.io/cloud-builders/docker"
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/my-image:latest'  # Push the image with the "latest" tag
+      - '.'
+
+  - name: 'gcr.io/cloud-builders/docker'
     args:
-      - "push"
-      - "gcr.io/$PROJECT_ID/my-image:latest"  # Push the image with the "latest" tag
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/my-image:latest'  # Push the image with the "latest" tag
 
 options:
   logging: CLOUD_LOGGING_ONLY
 
 images:
-  - "gcr.io/$PROJECT_ID/my-image:latest"  # Reference the image with the "latest" tag
+  - 'gcr.io/$PROJECT_ID/my-image:latest'  # Reference the image with the "latest" tag
