@@ -19,8 +19,15 @@ RUN npm run build
 # Step 2: Use the Nginx image to serve the static content
 FROM nginx:stable-alpine
 
+# Set the working directory in the Nginx container
+WORKDIR /usr/share/nginx/html
+
 # Copy the built assets from the builder stage to the nginx server directory
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist .
+
+# Copy the missing files from your local project to the Docker image
+COPY public/desktop_pc /usr/share/nginx/html/desktop_pc
+COPY public/planet /usr/share/nginx/html/planet
 
 # Set Nginx to listen on the appropriate port
 RUN sed -i 's/listen  .*/listen 8080;/g' /etc/nginx/conf.d/default.conf
