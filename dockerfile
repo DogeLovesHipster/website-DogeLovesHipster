@@ -25,6 +25,8 @@ WORKDIR /usr/share/nginx/html
 # Copy the built assets from the builder stage to the nginx server directory
 COPY --from=builder /app/dist .
 
+COPY custom.conf /etc/nginx/conf.d/custom.conf
+
 # Copy the missing files from your local project to the Docker image
 COPY public/desktop_pc /usr/share/nginx/html/desktop_pc
 COPY public/planet /usr/share/nginx/html/planet

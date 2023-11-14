@@ -6,7 +6,7 @@ steps:
       - "-t"
       - "gcr.io/$PROJECT_ID/my-image:latest"  # Use "latest" as the tag to always get the latest image
       - "."
-
+a
   - name: "gcr.io/cloud-builders/docker"
     args:
       - "push"
