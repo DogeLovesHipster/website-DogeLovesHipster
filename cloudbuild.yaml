@@ -1,10 +1,10 @@
+
+
 steps:
   - name: 'ubuntu'
     args: ['ls', '-l', '/workspace']
   - name: 'ubuntu'
     args: ['ls', '-l', '/workspace/website-DogeLovesHipster-1']
-
-steps:
   # Define your build steps here
   - name: "gcr.io/cloud-builders/docker"
     args:
