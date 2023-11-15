@@ -16,6 +16,10 @@ COPY . .
 # Build the application
 RUN npm run build
 
+# Manually copy the desktop_pc directory to the dist directory
+RUN cp -r public/desktop_pc dist/desktop_pc
+RUN cp -r public/planet dist/planet
+
 # Step 2: Use the Nginx image to serve the static content
 FROM nginx:stable-alpine
 
