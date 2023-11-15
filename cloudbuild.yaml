@@ -1,12 +1,13 @@
 steps:
-  # Define your build steps here
   - name: "gcr.io/cloud-builders/docker"
     args:
       - "build"
       - "--no-cache"
       - "-t"
       - 'gcr.io/$PROJECT_ID/my-image:$SHORT_SHA'  # Push the image with the "latest" tag
-      - "/home/seregio/website-DogeLovesHipster-1"
+      - "-f"  # Specify the Dockerfile
+      - "/home/seregio/website-DogeLovesHipster-1/Dockerfile"  # Use the absolute path to your Dockerfile
+      - "."  # Specify the build context (current directory)
 
   - name: "gcr.io/cloud-builders/docker"
     args:
