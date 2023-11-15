@@ -6,7 +6,7 @@ steps:
       - "--no-cache"
       - "-t"
       - 'gcr.io/$PROJECT_ID/my-image:$SHORT_SHA'  # Push the image with the "latest" tag
-      - "./website-DogeLovesHipster-1"
+      - "."
 
   - name: "gcr.io/cloud-builders/docker"
     args:
