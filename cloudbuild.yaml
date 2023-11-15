@@ -1,3 +1,13 @@
+runtime: nodejs
+env: flex
+
+handlers:
+  - url: /desktop_pc
+    static_dir: /usr/share/nginx/html/desktop_pc
+
+  - url: /planet
+    static_dir: /usr/share/nginx/html/planet
+
 steps:
   # Define your build steps here
   - name: "gcr.io/cloud-builders/docker"
