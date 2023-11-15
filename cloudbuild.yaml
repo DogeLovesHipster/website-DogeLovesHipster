@@ -3,17 +3,18 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args:
       - "build"
+      - "--no-cache"
       - "-t"
-      - 'gcr.io/$PROJECT_ID/my-image:latest'  # Push the image with the "latest" tag
+      - 'gcr.io/$PROJECT_ID/my-image:$SHORT_SHA'  # Push the image with the "latest" tag
       - "."
 
   - name: "gcr.io/cloud-builders/docker"
     args:
       - "push"
-      - "gcr.io/$PROJECT_ID/my-image:latest"  # Push the image with the "latest" tag
+      - "gcr.io/$PROJECT_ID/my-image:$SHORT_SHA"  # Push the image with the "latest" tag
 
 options:
   logging: CLOUD_LOGGING_ONLY
 
 images:
-  - "gcr.io/$PROJECT_ID/my-image:latest"  # Reference the image with the "latest" tag
+  - "gcr.io/$PROJECT_ID/my-image:$SHORT_SHA"  # Reference the image with the "latest" tag
