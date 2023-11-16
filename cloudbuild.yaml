@@ -1,5 +1,5 @@
 steps:
-  # Define your build steps here
+
   - name: "gcr.io/cloud-builders/docker"
     args:
       - "build"
