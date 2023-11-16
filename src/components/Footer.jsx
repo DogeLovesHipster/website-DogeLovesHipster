@@ -1,5 +1,6 @@
 import React from 'react';
 import { contact } from "../constants";
+import { slideIn } from "../utils/motion";
 
 const Footer = () => {
   return (

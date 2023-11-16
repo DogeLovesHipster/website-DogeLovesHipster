@@ -43,9 +43,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-20 h-15 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Sergio &nbsp;
-            <span className='sm:block hidden'> | Don't Believe the Hype </span>
+          <p className='text-white text-[24px] font-bold cursor-pointer flex '>
+            Sergio Mendoza
           </p>
         </Link>
 
