@@ -15,7 +15,7 @@ steps:
     args:
       - "run"
       - "deploy"
-      - "$(gcloud config get-value project)-website"  # Automatically get project ID and append "-website"
+      - "dogeloveshipster-website"  # Automatically get project ID and append "-website"
       - "--image=gcr.io/$PROJECT_ID/my-image:latest"
       - "--platform=managed"
       - "--region=us-west1"
