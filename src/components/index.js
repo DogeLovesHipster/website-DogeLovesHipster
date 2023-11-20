@@ -8,10 +8,12 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Footer from './Footer';
+import PreLoader from './preLoader';
 
 export {
   Hero,
   Navbar,
+  PreLoader,
   About,
   Tech,
   Experience,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { contact } from "../constants";
-import { slideIn } from "../utils/motion";
+
+import { SectionWrapper } from "../hoc";
 
 const Footer = () => {
   return (
@@ -23,5 +24,4 @@ const Footer = () => {
   );
 };
 
-
-export default Footer;
+export default SectionWrapper(Footer, "");
