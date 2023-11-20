@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../assets/logo.png';
-import '/home/sergio/website-DogeLovesHipster/src/shine-animation.css';
+import '../styles/shine-animation.css';
 
 const PreLoader = () => {
   const [setIsLoading] = useState(true);
