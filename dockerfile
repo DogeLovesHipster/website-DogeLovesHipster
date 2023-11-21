@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --verbose
+RUN npm install
 
 # Clear npm cache
 RUN npm cache clean --force
@@ -17,7 +17,7 @@ RUN npm cache clean --force
 COPY . .
 
 # Build the application
-RUN npm run build --verbose
+RUN npm run build
 
 # Step 2: Use the Nginx image to serve the static content
 FROM nginx:stable-alpine

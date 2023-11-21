@@ -10,9 +10,9 @@ const PreLoader = () => {
       setIsLoading(false); 
     }, 5000); 
   }, []);
-
+ // bg-slate-950 is temporary
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen bg-slate-950">
       <div className="shine">
         <img src={logo} alt="Logo" 
         className="w-28 h-28 object contain" 

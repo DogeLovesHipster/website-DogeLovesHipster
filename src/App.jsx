@@ -1,21 +1,29 @@
+import React, { Component } from "react";
+
 import { BrowserRouter } from "react-router-dom";
 
 import { About, PreLoader, Footer, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import { useEffect, useState } from "react";
 
-const App = () => {
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoading: true,
+    };
+  }
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
+  componentDidMount() {
     setTimeout(() => {
-      setIsLoading(false);
+      this.setState({ isLoading: false });
     }, 5000);
-  } , []);
+  }
 
+  
+  render() {
   return (
     <BrowserRouter>
-      {isLoading ? (
+      {this.state.isLoading ? (
         <PreLoader />
       ) : (
       <div className='relative z-0 bg-primary'>
@@ -37,6 +45,7 @@ const App = () => {
       )}
     </BrowserRouter>
   );
-};
+}
+}
 
 export default App;

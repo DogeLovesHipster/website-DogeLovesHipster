@@ -17,3 +17,11 @@ This portfolio website is designed to be responsive, interactive, and visually a
 - **Google Cloud**: To demostrate my knowledge of cloud computing, this website is entirely controlled by google cloud entirely set up by me.
 
 ### More to come in this Readme!
+
+To do list:
+- [] Remove and add better 3d objects
+- [] Animate footer
+- [] Change skill section entirely
+- [] Change loader from text to gif loader (old react practice has an example you used)
+- [] Add multiple pages (Projects, work, about)
+- [] Don't fall asleep
