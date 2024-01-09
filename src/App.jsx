@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { BrowserRouter } from "react-router-dom";
 
-import { About, PreLoader, Footer, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, PreLoader, Footer, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas } from "./components";
 import { useEffect, useState } from "react";
 
 class App extends Component {
@@ -33,7 +33,6 @@ class App extends Component {
         </div>
         <About />
         <Experience />
-        <Tech />
         <Works />
         <Feedbacks />
         <div className='relative z-0'>

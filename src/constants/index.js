@@ -15,6 +15,7 @@ import {
   dennys,
   wordle,
   rFinal,
+  diceGame,
   threejs,
   cpp,
   rLogo,
@@ -170,7 +171,7 @@ const projects = [
     description: "My attempt at getting a The Everyday Value Tee Scalper Bot",
     tags: [
       {
-        name: "Javascript",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
@@ -222,6 +223,28 @@ const projects = [
     ],
     image: rFinal,
     source_code_link: "https://github.com/DogeLovesHipster/ES386_Final_Exam",
+  },
+  {
+    name: "CS333 - Lab1 - Mendoza",
+    description:
+      "A simple dice roll program that I made for my CS333 class. This is a game that allows the user to refresh or clicka  button to roll dice to have a dice figt!.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: diceGame,
+    source_code_link: "https://github.com/SOU-Boscoe/lab1-DogeLovesHipster",
+    demo_link: "./diceGame/index.html",
   },
 ];
 
