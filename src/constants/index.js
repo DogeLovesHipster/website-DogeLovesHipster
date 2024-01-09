@@ -223,7 +223,7 @@ const projects = [
   {
     name: "CS333 - Lab1 - Mendoza",
     description:
-      "A simple dice roll program that I made for my CS333 class. This is a game that allows the user to refresh or clicka  button to roll dice to have a dice figt!.",
+      "A simple dice roll program that I made for my CS333 class. This game allows the user to refresh or click a button to roll dice against players in a dice fight!",
     tags: [
       {
         name: "JavaScript",
