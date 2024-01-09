@@ -240,7 +240,7 @@ const projects = [
     ],
     image: diceGame,
     source_code_link: "https://github.com/SOU-Boscoe/lab1-DogeLovesHipster",
-    demo_link: "diceGame/index.html",
+    demo_link: "/diceGame/index.html",
   },
 ];
 
