@@ -178,10 +178,6 @@ const projects = [
         name: "Puppeteer",
         color: "green-text-gradient",
       },
-      {
-        name: "npm",
-        color: "pink-text-gradient",
-      },
     ],
     image: dennys,
     source_code_link: "https://github.com/DogeLovesHipster/Dennys-Scalper-Bot",
@@ -244,7 +240,7 @@ const projects = [
     ],
     image: diceGame,
     source_code_link: "https://github.com/SOU-Boscoe/lab1-DogeLovesHipster",
-    demo_link: "./diceGame/index.html",
+    demo_link: "diceGame/index.html",
   },
 ];
 
