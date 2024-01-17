@@ -15,7 +15,6 @@ import {
   dennys,
   wordle,
   rFinal,
-  diceGame,
   threejs,
   cpp,
   rLogo,
@@ -26,6 +25,7 @@ import {
   afterEffects,
   github,
   linkedin,
+  drumSet,
 } from "../assets";
 
 export const navLinks = [
@@ -221,9 +221,9 @@ const projects = [
     source_code_link: "https://github.com/DogeLovesHipster/ES386_Final_Exam",
   },
   {
-    name: "CS333 - Lab1 - Mendoza",
+    name: "CS333 - Lab2 - Mendoza",
     description:
-      "A simple dice roll program that I made for my CS333 class. This game allows the user to refresh or click a button to roll dice against players in a dice fight!",
+      "A simple interactive drum set that I made for my CS333 class. It reacts to clicks and keyboard presses by making sounds..",
     tags: [
       {
         name: "JavaScript",
@@ -238,9 +238,9 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: diceGame,
-    source_code_link: "https://github.com/SOU-Boscoe/lab1-DogeLovesHipster",
-    demo_link: "/diceGame/index.html",
+    image: drumSet,
+    source_code_link: "https://github.com/SOU-Boscoe/lab2-DogeLovesHipster",
+    demo_link: "/drumSet/index.html",
   },
 ];
 
