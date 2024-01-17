@@ -12,6 +12,7 @@
     position: relative;
     overflow: hidden;
     display: inline-block;
+    background-color: transparent;
   }
   
   .shine::before {

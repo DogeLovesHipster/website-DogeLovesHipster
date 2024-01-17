@@ -2,7 +2,7 @@
 
 ### This is a work in progress currently! Thanks for your patience!
 
-I did actually decide to go ahead and make this public to demostrate the libraries and approach I took to make this website. This repo has an automatic deployement system that allows my github pushes to update my website that is being honest on Google Cloud. No need to complicate things!
+I did actually decide to go ahead and make this public to demostrate the libraries and approach I took to make this website. This repo has an automatic deployement system that allows my github pushes to update my website that is being hosted on Google Cloud. No need to complicate things!
 
 ## Introduction
 
@@ -24,4 +24,5 @@ To do list:
 - [] Change skill section entirely
 - [] Change loader from text to gif loader (old react practice has an example you used)
 - [] Add multiple pages (Projects, work, about)
-- [] Don't fall asleep
+- [] Mess with preloader image to fix animation (svg or other changes)
+- [X] Don't fall asleep

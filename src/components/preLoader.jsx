@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.png'; // Logo might be way to big
 import '../styles/shine-animation.css';
 
 const PreLoader = () => {
-  const [setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false); 
-    }, 5000); 
+    const img = new Image();
+    img.src = logo;
+    img.onload = () => setIsLoading(false);
   }, []);
- // bg-slate-950 is temporary
+
+  if (isLoading) {
+    return null;
+  }
+
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="shine">
