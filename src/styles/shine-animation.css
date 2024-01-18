@@ -1,31 +1,30 @@
 /* shine-animation.css */
 @keyframes shine {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(-100%);
   }
-  
-  .shine {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    background-color: transparent;
+  100% {
+    transform: translateX(100%);
   }
-  
-  .shine::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.6),
-      transparent
-    );
-    animation: shine 2s linear infinite;
-  }
-  
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.shine::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shine 2s linear infinite;
+}

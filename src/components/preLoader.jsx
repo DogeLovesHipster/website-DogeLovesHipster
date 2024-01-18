@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/logo.png'; // Logo might be way to big
+import logo from '../assets/logo.svg';
 import '../styles/shine-animation.css';
 
 const PreLoader = () => {
