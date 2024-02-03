@@ -1,4 +1,5 @@
 import {
+  logo,
   mobile,
   backend,
   creator,
@@ -25,7 +26,6 @@ import {
   afterEffects,
   github,
   linkedin,
-  drumSet,
 } from "../assets";
 
 export const navLinks = [
@@ -60,6 +60,10 @@ const services = [
     title: "Data Scientist",
     icon: creator,
   },
+  {
+    title: "Software Developer",
+    icon: creator,
+  }
 ];
 
 const technologies = [
@@ -119,6 +123,20 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Engineer",
+    company_name: "Freelance",
+    icon: logo,
+    iconBg: "#383E56",
+    date: "Dec 2023 - Present",
+    skills:
+      "JavaScript · React · MongoDB · OpenAI Products · Google Cloud Platform (GCP)",
+    points: [
+      "Engaged in product development by programming a React Native AR mobile game managed by an Expo framework to design an interactive app for iOS and Android platforms.",
+      "Constructing a complete backend using MongoDB, hosting in Google Cloud VMs, with Google Analytics for analysis",
+      "Implementing OpenAI APIs for interactive AI narrators, responsive QR code scanners for IRL integration, and custom game styling.",
+    ],
+  },
+  {
     title: "NASA-Funded Research Intern - Google Earth Engine",
     company_name: "NASA",
     icon: nasa,
@@ -129,14 +147,14 @@ const experiences = [
     points: [
       "Collaborated with various universities to handle research data, performing a comprehensive analysis of the carbon export from rivers to coastal oceans.",
       "Utilized satellite remote sensing and programmed datasets of surface reflectance from U.S. rivers in Javascript, contributing to the development of a model that incorporates data and hydrology to estimate fluxes.",
-      "Worked closely with the internship mentor to align project objectives, and aspirations, ultimately creating a scientifically backed analysis with the available data",
+      "Worked closely with the internship mentor to align project objectives, and aspirations, ultimately creating a scientifically backed analysis with the available data.",
     ],
   },
   {
     title: "Lab and Classroom Tech",
     company_name: "Southern Oregon University",
     icon: sou,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "Sept 2022 - Present",
     skills: "Communication · Mac OS · Windows OS · Problem Solving",
     points: [
@@ -219,28 +237,6 @@ const projects = [
     ],
     image: rFinal,
     source_code_link: "https://github.com/DogeLovesHipster/ES386_Final_Exam",
-  },
-  {
-    name: "CS333 - Lab2 - Mendoza",
-    description:
-      "A simple interactive drum set that I made for my CS333 class. It reacts to clicks and keyboard presses by making sounds..",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "HTML",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: drumSet,
-    source_code_link: "https://github.com/SOU-Boscoe/lab2-DogeLovesHipster",
-    demo_link: "/drumSet/index.html",
   },
 ];
 

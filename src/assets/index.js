@@ -30,7 +30,6 @@ import sou from "./company/sou.png";
 import dennys from "./dennys_everyday.png";
 import wordle from "./discord_wordle.png";
 import rFinal from "./es386Final.png"
-import drumSet from "./drumSetImage.png"
 
 import linkedin from "./linkedin.png";
 
@@ -64,6 +63,5 @@ export {
   dennys,
   wordle,
   rFinal,
-  drumSet,
   linkedin,
 };
