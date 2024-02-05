@@ -8,10 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --force
 
 # Clear npm cache
 RUN npm cache clean --force
+
+# Audit and fix vulnerabilities
+RUN npm audit fix
 
 # Copy the rest of your application's source code
 COPY . .
