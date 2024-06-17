@@ -54,8 +54,8 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul>
       <p
-          className='font-semibold text-center text-pink-300'
-        >
+        className='font-semibold text-center text-pink-300'
+      >
         {experience.skills}
       </p>
     </VerticalTimelineElement>

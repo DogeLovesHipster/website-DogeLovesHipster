@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logotest.svg';
 import '../styles/shine-animation.css';
 
 const PreLoader = () => {
@@ -11,13 +11,9 @@ const PreLoader = () => {
     img.onload = () => setIsLoading(false);
   }, []);
 
-  if (isLoading) {
-    return null;
-  }
-
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="shine">
+      <div className="spin">
         <img src={logo} alt="Logo" 
         className="w-28 h-28 object contain" 
         style={{ objectPosition: 'center top' }}/>

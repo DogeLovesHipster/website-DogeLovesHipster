@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -14,7 +14,6 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import { useEffect, useState } from "react";
 
 class App extends Component {
   constructor() {
@@ -27,7 +26,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ isLoading: false });
-    }, 5000);
+    }, 1000);
   }
 
   render() {

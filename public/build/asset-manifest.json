@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.47e9ec91.css",
+    "main.js": "/static/js/main.7024cc7d.js",
+    "static/media/sigurd.png": "/static/media/sigurd.2eaa61b3b4f85fe51aef.png",
+    "static/media/Coilhead_Clear.png": "/static/media/Coilhead_Clear.177f28389cc090a1cacc.png",
+    "static/media/hoardingBug.png": "/static/media/hoardingBug.2d523c51a9f43cd7f3a7.png",
+    "index.html": "/index.html",
+    "main.47e9ec91.css.map": "/static/css/main.47e9ec91.css.map",
+    "main.7024cc7d.js.map": "/static/js/main.7024cc7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47e9ec91.css",
+    "static/js/main.7024cc7d.js"
+  ]
+}
