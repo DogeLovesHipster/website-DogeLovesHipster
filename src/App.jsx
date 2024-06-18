@@ -1,7 +1,5 @@
 import { Component } from "react";
-
 import { BrowserRouter } from "react-router-dom";
-
 import {
   About,
   PreLoader,
@@ -24,10 +22,23 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, 1000);
+    this._isMounted = true; // Set flag to true when component mounts
+  
+    Promise.all([
+      new Promise((resolve) => window.addEventListener('load', resolve)),
+      document.fonts.ready,
+      
+    ]).then(() => {
+      if (this._isMounted) { // Check if component is still mounted
+        this.setState({ isLoading: false });
+      }
+    });
   }
+  
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
+
 
   render() {
     return (

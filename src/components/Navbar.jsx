@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+import svgLogo from "../assets/logo.svg";
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -42,7 +44,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-20 h-15 object-contain' />
+          <img src={svgLogo} alt='logo' className='w-20 h-15 object-contain' />
           <p className='text-white text-[24px] font-bold cursor-pointer flex '>
             Sergio Mendoza
           </p>
