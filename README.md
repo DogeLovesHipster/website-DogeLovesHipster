@@ -20,9 +20,4 @@ This portfolio website is designed to be responsive, interactive, and visually a
 
 To do list:
 - [] Remove and add better 3d objects
-- [] Animate footer
-- [] Change skill section entirely
-- [] Change loader from text to gif loader (old react practice has an example you used)
 - [] Add multiple pages (Projects, work, about)
-- [] Mess with preloader image to fix animation (svg or other changes)
-- [X] Don't fall asleep

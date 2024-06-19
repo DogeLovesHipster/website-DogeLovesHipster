@@ -18,7 +18,7 @@
   margin-left: -60px;
   opacity: 0;
   margin-bottom: 10px;
-  transition: opacity 0.9s, visibility 1s;
+  transition: opacity 0.9s, visibility 0.9s ease-in;
 }
 
 .hover-target:hover .hover-info {
@@ -28,9 +28,20 @@
 
 /* Custom hover gradients for GitHub and YouTube buttons */
 .hover-github-gradient:hover {
-  background-image: linear-gradient(to right, #333, #999); 
+  background-image: linear-gradient(to right, #333, #999);
+  background-position: right center;
 }
 
 .hover-youtube-gradient:hover {
-  background-image: linear-gradient(to right, #c4302b, #ff0000); 
+  background-image: linear-gradient(to right, #c4302b, #ff0000);
+  background-position: right center;
+}
+
+/* Enlarge the icon when hovering */
+.hover-icon-enlarge {
+  transition: transform 0.3s ease-in;
+}
+
+.hover-target:hover .hover-icon-enlarge {
+  transform: scale(1.5);
 }
