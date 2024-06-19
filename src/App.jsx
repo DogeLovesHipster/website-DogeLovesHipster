@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   About,
   PreLoader,
@@ -11,6 +11,7 @@ import {
   Navbar,
   Works,
   StarsCanvas,
+  NotFoundPage,
 } from "./components";
 
 import './App.css';
@@ -24,14 +25,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this._isMounted = true; // Set flag to true when component mounts
+    this._isMounted = true;
   
     Promise.all([
       new Promise((resolve) => window.addEventListener('load', resolve)),
       document.fonts.ready,
       
     ]).then(() => {
-      if (this._isMounted) { // Check if component is still mounted
+      if (this._isMounted) {
         this.setState({ isLoading: false });
       }
     });
@@ -49,21 +50,27 @@ class App extends Component {
         {this.state.isLoading ? (
           <PreLoader />
         ) : (
-          <div className={`relative z-0 bg-primary ${contentClass}`}>
-            <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-              <Navbar />
-              <Hero />
-            </div>
-            <About />
-            <Experience />
-            <Works />
-            <Feedbacks />
-            <div className="relative z-0">
-              <Contact />
-              <Footer />
-              <StarsCanvas />
-            </div>
-          </div>
+          <Routes>
+            <Route path="/" element={
+              <div className={`relative z-0 bg-primary ${contentClass}`}>
+                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                  <Navbar />
+                  <Hero />
+                </div>
+                <About />
+                <Experience />
+                <Works />
+                <Feedbacks />
+                <div className="relative z-0">
+                  <Contact />
+                  <Footer />
+                  <StarsCanvas />
+                </div>
+              </div>
+            } />
+
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
         )}
       </BrowserRouter>
     );

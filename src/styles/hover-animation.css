@@ -1,0 +1,36 @@
+.hover-target {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-info {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(43, 43, 43);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  margin-bottom: 10px;
+  transition: opacity 0.9s, visibility 1s;
+}
+
+.hover-target:hover .hover-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Custom hover gradients for GitHub and YouTube buttons */
+.hover-github-gradient:hover {
+  background-image: linear-gradient(to right, #333, #999); 
+}
+
+.hover-youtube-gradient:hover {
+  background-image: linear-gradient(to right, #c4302b, #ff0000); 
+}

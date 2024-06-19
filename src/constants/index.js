@@ -9,14 +9,12 @@ import {
   html,
   css,
   reactjs,
-  tailwind,
   nodejs,
   nasa,
   sou,
   dennys,
   wordle,
   rFinal,
-  threejs,
   cpp,
   rLogo,
   python,
@@ -26,6 +24,7 @@ import {
   afterEffects,
   github,
   linkedin,
+  youtube,
 } from "../assets";
 
 export const navLinks = [
@@ -63,61 +62,6 @@ const services = [
   {
     title: "Software Developer",
     icon: creator,
-  }
-];
-
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "R",
-    icon: rLogo,
-  },
-  {
-    name: "c++",
-    icon: cpp,
-  },
-  {
-    name: "Adobe Illustrator",
-    icon: illustrator,
-  },
-  {
-    name: "Adobe Photoshop",
-    icon: photoshop,
-  },
-  {
-    name: "Adobe Premiere Pro",
-    icon: premierePro,
-  },
-  {
-    name: "Adobe After Effects",
-    icon: afterEffects,
   },
 ];
 
@@ -156,7 +100,8 @@ const experiences = [
     icon: sou,
     iconBg: "#383E56",
     date: "Sept 2022 - June 2024",
-    skills: "Communication · Mac OS · Windows OS · Linux OS · Problem Solving · Bash · Powershell",
+    skills:
+      "Communication · Mac OS · Windows OS · Linux OS · Problem Solving · Bash · Powershell",
     points: [
       "Managed software installations and updates on lab computers, ensuring compatibility and optimal performance for hundreds of machines across the campus. Assisted in the physical setup and lifting of IT equipment during upgrades and new installations.",
       "Coordinated with faculty and IT application administrator staff to implement new technology solutions that enhance learning experiences.",
@@ -199,6 +144,7 @@ const projects = [
     ],
     image: dennys,
     source_code_link: "https://github.com/DogeLovesHipster/Dennys-Scalper-Bot",
+    // youtube_link: "",
   },
   {
     name: "Discord Wordle Bot",
@@ -220,6 +166,7 @@ const projects = [
     ],
     image: wordle,
     source_code_link: "https://github.com/DogeLovesHipster/Discord-Wordle-Bot",
+    // youtube_link: "",
   },
   {
     name: "ES386 R Final",
@@ -237,6 +184,7 @@ const projects = [
     ],
     image: rFinal,
     source_code_link: "https://github.com/DogeLovesHipster/ES386_Final_Exam",
+    // youtube_link: "",
   },
 ];
 
@@ -253,4 +201,4 @@ const contact = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, contact };
+export { services, experiences, testimonials, projects, contact };

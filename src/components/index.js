@@ -8,6 +8,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Footer from './Footer';
 import PreLoader from './preLoader';
+import NotFoundPage from './NotFoundPage';
 
 export {
   Hero,
@@ -21,5 +22,6 @@ export {
   Footer,
   EarthCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  NotFoundPage
 }

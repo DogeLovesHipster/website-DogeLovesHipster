@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import youtube from "./youtube.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -14,7 +15,6 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import cpp from "./tech/cpp.png";
 import afterEffects from "./tech/afterEffects.png";
 import audition from "./tech/audition.png";
@@ -29,7 +29,7 @@ import sou from "./company/sou.png";
 
 import dennys from "./dennys_everyday.png";
 import wordle from "./discord_wordle.png";
-import rFinal from "./es386Final.png"
+import rFinal from "./es386Final.png";
 
 import linkedin from "./linkedin.png";
 
@@ -40,6 +40,7 @@ export {
   mobile,
   web,
   github,
+  youtube,
   menu,
   close,
   css,
@@ -57,7 +58,6 @@ export {
   rLogo,
   tailwind,
   typescript,
-  threejs,
   nasa,
   sou,
   dennys,

@@ -3,10 +3,14 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, youtube } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+import { useNavigate } from "react-router-dom"; 
+
+import "../styles/hover-animation.css";
 
 const ProjectCard = ({
   index,
@@ -15,12 +19,34 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  youtube_link,
   demo_link,
 }) => {
+
+  const navigate = useNavigate();
+
+  const handleYouTubeClick = () => {
+    if (!youtube_link) {
+      // If youtube_link is not provided, navigate to 404
+      navigate('/404?Unavailable');
+    } else {
+      window.open(youtube_link, "_blank");
+    }
+  };
+
+  const handleGitHubClick = () => {
+    if (!source_code_link) {
+      // If source_code_link is not provided, navigate to 404
+      navigate('/404?Unavailable');
+    } else {
+      window.open(source_code_link, "_blank");
+    }
+  };
+
   return (
     <a href={demo_link} target="_blank" rel="noopener noreferrer">
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      onClick={demo_link ? () => window.location.href = demo_link : null}
+        onClick={demo_link ? () => window.location.href = demo_link : null}
       >
         <Tilt
           options={{
@@ -38,15 +64,29 @@ const ProjectCard = ({
             />
 
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              >
-                <img
-                  src={github}
-                  alt="source code"
-                  className="w-1/2 h-1/2 object-contain"
-                />
+              <div className="relative flex space-x-2">
+                <div
+                  onClick={handleGitHubClick}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover-target hover-github-gradient"
+                >
+                  <img
+                    src={github}
+                    alt="source code"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                  <div className="hover-info">Visit the public repo!</div>
+                </div>
+                <div
+                    onClick={handleYouTubeClick}
+                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover-target hover-youtube-gradient"
+                  >
+                    <img
+                      src={youtube}
+                      alt="YouTube"
+                      className="w-1/2 h-1/2 object-contain"
+                    />
+                    <div className="hover-info">Watch a demo on YouTube!</div>
+                  </div>
               </div>
             </div>
           </div>
