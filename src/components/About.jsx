@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      Currently enrolled with a major in Environmental Science and Policy with a minor in Computer Science. My focus is on ArcGIS encoding and in-depth web development with my past experience in graphic design and computer literacy skills. Though, I'm fairly open to beginning new projects, developing new skills, enhancing my current skills, and discovering my new passions in the world of technology.
+      Hey there, I'm Sergio Mendoza. I'm a recent graduate of Environmental Science and Policy with a minor in Computer Science. I love working with JavaScript, Python, and C++ and messing around with whatever new technology I can get my hands on. Currently I am working on creating a React Native mobile game and wrapping up my environmental data analysis project with NASA.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -13,6 +13,8 @@ import {
   StarsCanvas,
 } from "./components";
 
+import './App.css';
+
 class App extends Component {
   constructor() {
     super();
@@ -41,12 +43,13 @@ class App extends Component {
 
 
   render() {
+    const contentClass = this.state.isLoading ? "" : "fade-in";
     return (
       <BrowserRouter>
         {this.state.isLoading ? (
           <PreLoader />
         ) : (
-          <div className="relative z-0 bg-primary">
+          <div className={`relative z-0 bg-primary ${contentClass}`}>
             <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
               <Navbar />
               <Hero />
