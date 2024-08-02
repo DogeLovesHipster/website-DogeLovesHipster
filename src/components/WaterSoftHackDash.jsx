@@ -7,7 +7,7 @@ const WaterSoftHackDash = () => {
     return (
         <div>
             <iframe
-                src="../projects/dashboard/index.html"
+                src="/projects/dashboard/index.html"
                 style={{ width: '100%', height: '100vh', border: 'none' }}
                 title="Dashboard"
             ></iframe>
