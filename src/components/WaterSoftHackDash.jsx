@@ -1,20 +1,18 @@
-import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const WaterSoftHackDash = () => {
-  const location = useLocation();
-  const { title } = location.state || { title: "WaterSoftHack Dash" }; // Fallback title if none is provided
+    const location = useLocation();
+    const { title } = location.state || { title: "WaterSoftHack Dash" }; // Fallback title if none is provided
 
-  useEffect(() => {
-    window.location.href = "/projects/dashboard/index.html";
-  }, []);
-
-  return (
-    <div>
-      <h1>{title}</h1>
-      {/* The rest of your content will not be displayed because of the redirection */}
-    </div>
-  );
+    return (
+        <div>
+            <iframe
+                src="/projects/dashboard/index.html"
+                style={{ width: '100%', height: '100vh', border: 'none' }}
+                title="Dashboard"
+            ></iframe>
+        </div>
+    );
 };
 
 export default WaterSoftHackDash;
