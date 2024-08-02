@@ -32,18 +32,18 @@ class App extends Component {
 
   componentDidMount() {
     this._isMounted = true;
-  
+
     Promise.all([
       new Promise((resolve) => window.addEventListener('load', resolve)),
       document.fonts.ready,
-      
+
     ]).then(() => {
       if (this._isMounted) {
         this.setState({ isLoading: false });
       }
     });
   }
-  
+
   componentWillUnmount() {
     this._isMounted = false;
   }
@@ -75,10 +75,10 @@ class App extends Component {
               </div>
             } />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/denny's-scalper-bot" element= {<DennysScraperBot />} />
-            <Route path="/projects/discord-wordle-bot" element= {<DiscordWordleBot />} />
-            <Route path="/projects/es386-r-final" element= {<ES386RFinal />} />
-            <Route path="projects/watersofthack-capstone-project-turbidity-dashboard" element= {<WaterSoftHackDash />} />
+            <Route path="/projects/denny's-scalper-bot" element={<DennysScraperBot />} />
+            <Route path="/projects/discord-wordle-bot" element={<DiscordWordleBot />} />
+            <Route path="/projects/es386-r-final" element={<ES386RFinal />} />
+            <Route path="/projects/watersofthack-capstone-project-turbidity-dashboard" element={<WaterSoftHackDash />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         )}
