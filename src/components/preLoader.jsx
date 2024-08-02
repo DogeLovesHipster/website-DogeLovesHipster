@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../assets/logo.svg';
-import '../styles/shine-animation.css';
+import '../styles/spin-animation.css';
 
 const PreLoader = () => {
   const [isLoading, setIsLoading] = useState(true);

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="module" src="main.js"></script>
+    <script type="module" src="src/acquisitions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hydrolang@1.1.7/hydrolang.js"></script>
+    <link rel="icon" type="image/svg+xml" href="./public/watersofthack_logo.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="./src/starBackground.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Presentation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="body">
+      <canvas id="space-background" class="space-background"></canvas>
+      <div class="container">
+        <header class="header">
+          <div class="user-info">
+            <span id="welcome-message" class="user-message"></span>
+            <img class="user-img" src="./imgs/personLogo.svg"></img>
+          </div>
+        </header>
+        <aside class="side-nav" id="mySidenav">
+          <nav class="side-text">
+            <a href="/" class="logo-link">
+              <img src="./imgs/turbidityLogo.svg" alt="Turbidity Logo" class="main-logo" />
+            </a>
+            <h2>Turbidity Dashboard</h2>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Analytics</a></li>
+              <li><a href="/">Settings</a></li>
+              <li><a href="/">Profile</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="main">
+            <h2 class="dashboard-title">Welcome to <span style="background-image: linear-gradient(to right, rgb(54, 54, 148), rgb(155, 133, 216)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Team Turbidity's </span>Demo Dashboard!</h2>
+          <section class="dashboard-content-header">
+            <h2>Overview</h2>
+            <p class="dashboard-content-text-intro">Welcome to the Turbidity Dashboard demo, an educational tool designed to visualize and analyze water quality data! This is a current work in progress and in the early stages, but feel free to explore and learn about turbidity! This is a project that was made possible because of WaterSoftHack's education opportunities</p>
+          </section>
+          <div class="dashboard-section-container">
+            <div class="dashboard-content-grid">
+              <section class="dashboard-content-grid">
+                <h2 class="descriptive-stats-title-mean">Mean</h2>
+                <p id="descriptive-stats-num-mean" class="descriptive-stats-num">78.2 NTU</p>
+              </section>
+              <section class="dashboard-content-grid">
+                <h2 class="descriptive-stats-title-sd">Standard Deviation</h2>
+                <p id="descriptive-stats-num-sd" class="descriptive-stats-num">178 NTU</p>
+              </section>
+              <section class="dashboard-content-grid">
+                <h2 class="descriptive-stats-title-min">Minimum</h2>
+                <p id="descriptive-stats-num-min" class="descriptive-stats-num">5.2 NTU</p>
+              </section>
+              <section class="dashboard-content-grid">
+                <h2 class="descriptive-stats-title-max">Maximum</h2>
+                <p id="descriptive-stats-num-max" class="descriptive-stats-num">3220 NTU</p>
+              </section>
+            </div>
+            <section class="dashboard-content-half">
+              <h2>Time Series Decomposition</h2>
+              <div class="zoom-container">
+                <img id="decomposition-plot" src="./data/cleaned/badgerCreek452737122231400_graph.png" alt="decomposition-plot">
+                <button class="zoom-button">Zoom In</button>
+                <button class="close-button" id="close-button">X</button>
+            </div>
+              <div class="overlay" id="overlay"></div>
+              <!-- <div>
+                <canvas id="acquisitions"></canvas>
+              </div> -->
+            </section>
+          </div>
+
+          <div class="dashboard-content-container">
+            <section class="dashboard-content-half-modded">
+              <a class="hydrolang" href="https://github.com/uihilab/HydroLang?tab=readme-ov-file">HydroLang</a>
+              <div id="map"></div>
+              <div id="overlay">
+                <div id="content">
+                  <div id="retrieved-data"></div>
+                  <div id="stats-table"></div>
+                  <button id="download-btn">Download Data</button>
+                </div>
+              </div>
+              <script src="src/hydroMain.js"></script>
+            </section>
+
+            <section class="dashboard-content-quarter">
+              <h2>About your site</h2>
+              <p class="special-text">Badger Creek at Rugg Road Near Gresham, OR</p>
+            <hr>
+            <p class="about-text">The USGS monitoring site "Badger Creek at Rugg Road Near Gresham, OR" (site number 452737122231400) is located in Clackamas County, Oregon. This site monitors a stream within the hydrologic unit 17090012 and has a drainage area of 2.29 square miles. The USGS Oregon Water Science Center maintains records for this site, with water data available online dating back to 2007. The data collected include measurements of turbidity and various water quality parameters, which can be accessed and visualized through the USGS National Water Dashboard.</p>
+            <a class="about-site-links" href="https://waterdata.usgs.gov/monitoring-location/452737122231400/#parameterCode=63680&period=P7D&showMedian=true">
+              <button class="site-button">Access the USGS dashboard for this site</button>
+            </a>
+            <a class="about-site-links" href="https://waterdata.usgs.gov/nwis/inventory?agency_code=USGS&site_no=452737122231400">
+              <button class="site-button">Download more data for this site</button>
+            </a>
+            </section>
+          </div>
+          <div class="dashboard-content-container">
+            <section class="dashboard-content-full">
+              <h2>Overall prediction of site's turbidity</h2>
+              <img src="./imgs/overallPredict.png" alt="Overall Prediction" class="prediction-img1"/>
+            </section>
+            </div>
+            <div class="dashboard-content-container">
+              <section class="dashboard-content-full">
+                <h2>One week site's turbidity prediction</h2>
+                <img src="./imgs/oneWeekPredict.png" alt="One Week Prediction" class="prediction-img2"/>
+              </section>
+              </div>
+              <div class="dashboard-content-container">
+                <section class="dashboard-content-full">
+                  <h2>Best predicted days of site's turbidity</h2>
+                  <img src="./imgs/bestPredict.png" alt=" Best Prediction" class="prediction-img3"/>
+                </section>
+                </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2024 Made by Sergio Mendoza.</p>
+      <div class="footer-assistants">
+      <p class="footer-text">With overall research and programming assistance from:</p>
+      <p class="footer-text">Galina Shinkareva &#183; Payton Davis &#183; Srilani Wickramasinghe &#183; Abiodun Ayo-Bali</p> 
+      <p class="footer-text">For the WaterSoftHack capstone project</p>
+      </div>
+    </div>
+    </div>
+</footer>
+</html>

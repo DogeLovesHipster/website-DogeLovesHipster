@@ -1,18 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-const Projects = ({ projects }) => {
-  return (
-    <div>
-      {projects.map(project => (
-        <div key={project.name}>
-          <Link to={project.path}>
-            <button>View {project.name} Live</button>
-          </Link>
+function Projects() {
+    return (
+        <div>
+            <h1>Hello</h1>
         </div>
-      ))}
-    </div>
-  );
-};
+    );
+}
 
 export default Projects;

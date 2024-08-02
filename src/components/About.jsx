@@ -40,14 +40,14 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={`${styles.sectionHeadText} inline-block`}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      Hey there, I'm Sergio Mendoza. I'm a recent graduate of Environmental Science and Policy with a minor in Computer Science. I love working with JavaScript, Python, and C++ and messing around with whatever new technology I can get my hands on. Currently I am working on creating a React Native mobile game and wrapping up my environmental data analysis project with NASA.
+        Hey there, I'm Sergio Mendoza. I'm a recent graduate of Environmental Science and Policy with a minor in Computer Science. I love working with JavaScript, Python, and C++ and messing around with whatever new technology I can get my hands on. Currently I am working on creating a React Native mobile game and wrapping up my environmental data analysis project with NASA.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

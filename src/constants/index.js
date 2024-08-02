@@ -25,6 +25,7 @@ import {
   github,
   linkedin,
   youtube,
+  watersofthack,
 } from "../assets";
 
 export const navLinks = [
@@ -131,7 +132,7 @@ const testimonials = [];
 const projects = [
   {
     name: "Denny's Scalper Bot",
-    description: "My attempt at getting a The Everyday Value Tee Scalper Bot",
+    description: "My attempt at getting a The Everyday Value Tee Scalper Bot!",
     tags: [
       {
         name: "JavaScript",
@@ -186,6 +187,27 @@ const projects = [
     source_code_link: "https://github.com/DogeLovesHipster/ES386_Final_Exam",
     // youtube_link: "",
   },
+  {
+    name: "WaterSoftHack Capstone Project Turbidity Dashboard",
+    description:
+      "THIS IS TEMP: This was my capstone project for my WaterSoftHack class. I was the team lead and I was responsible for the design and implementation of the turbidity dashboard. Entirely made by me in around 8 hours with plenty of focus and determination. Enjoy the experience and the rough edges of the beautiful aesthetic of this website.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: watersofthack,
+    source_code_link: "",
+  }
 ];
 
 const contact = [

@@ -11,6 +11,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { useNavigate } from "react-router-dom"; 
 
 import "../styles/hover-animation.css";
+import "../styles/shine-animation.css"
 
 const ProjectCard = ({
   index,
@@ -25,9 +26,15 @@ const ProjectCard = ({
 
   const navigate = useNavigate();
 
+  const handleCardClick = () => {
+    // Use a URL-friendly version of the project name
+    const projectNameUrl = encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'));
+    navigate(`/projects/${projectNameUrl}`, { state: { title: name } });
+  };
+
+  // Methods to handle the click of the YouTube and GitHub icons
   const handleYouTubeClick = () => {
     if (!youtube_link) {
-      // If youtube_link is not provided, navigate to 404
       navigate('/404?Unavailable');
     } else {
       window.open(youtube_link, "_blank");
@@ -36,7 +43,6 @@ const ProjectCard = ({
 
   const handleGitHubClick = () => {
     if (!source_code_link) {
-      // If source_code_link is not provided, navigate to 404
       navigate('/404?Unavailable');
     } else {
       window.open(source_code_link, "_blank");
@@ -44,10 +50,11 @@ const ProjectCard = ({
   };
 
   return (
-    <a href={demo_link} target="_blank" rel="noopener noreferrer">
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        onClick={demo_link ? () => window.location.href = demo_link : null}
-      >
+    <motion.div 
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      onClick={handleCardClick}
+      className="cursor-pointer"
+    >
         <Tilt
           options={{
             max: 45,
@@ -108,16 +115,21 @@ const ProjectCard = ({
           </div>
         </Tilt>
       </motion.div>
-    </a>
   );
 };
 
 const Works = () => {
+  const navigate = useNavigate();
+
+  const handleHeaderClick = () => {
+    navigate("/projects");
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText} cursor-pointer project-text display: inline-block`} onClick={handleHeaderClick}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
