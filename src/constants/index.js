@@ -206,8 +206,9 @@ const projects = [
       },
     ],
     image: watersofthack,
-    source_code_link: "",
-  }
+    // source_code_link: "",
+    // youtube_link: "",
+  },
 ];
 
 const contact = [
