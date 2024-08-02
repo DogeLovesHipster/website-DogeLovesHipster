@@ -8,11 +8,8 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
-app.use("/build", express.static(path.join(__dirname, "public/build")));
-app.use(
-  "/static",
-  express.static(path.join(__dirname, "../public/build/static"))
-);
+// Serve static files from the build directory
+app.use(express.static(path.join(__dirname, "public/build")));
 
 // Catch-all route to serve index.html for client-side routing
 app.get("/*", (req, res) => {

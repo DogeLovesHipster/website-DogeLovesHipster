@@ -8,6 +8,8 @@ handlers:
   - url: /planet
     static_dir: /usr/share/nginx/html/planet
 
+  - url: /projects
+    static_dir: public/projects
+
   - url: /.*
-    static_files: /usr/share/nginx/html/index.html
-    upload: /usr/share/nginx/html/index.html
+    script: auto
