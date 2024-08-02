@@ -78,7 +78,7 @@ class App extends Component {
             <Route path="/projects/denny's-scalper-bot" element= {<DennysScraperBot />} />
             <Route path="/projects/discord-wordle-bot" element= {<DiscordWordleBot />} />
             <Route path="/projects/es386-r-final" element= {<ES386RFinal />} />
-            <Route path="/projects/watersofthack-capstone-project-turbidity-dashboard" element= {<WaterSoftHackDash />} />
+            <Route path="/projects/watersofthack-capstone-project-turbidity-dashboard/index.html" element= {<WaterSoftHackDash />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         )}
