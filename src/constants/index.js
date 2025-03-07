@@ -12,6 +12,8 @@ import {
   nodejs,
   nasa,
   sou,
+  rcu,
+  usgs,
   dennys,
   wordle,
   rFinal,
@@ -63,18 +65,48 @@ const services = [
   {
     title: "Software Developer",
     icon: creator,
-  },
+  }
 ];
 
 const experiences = [
+  {
+    title: "USGS Research Contractor | Programmer",
+    company_name: "U.S. Geographical Survey (USGS)",
+    icon: usgs,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Present",
+    skills: "Javascript · Python · Google Earth Engine (GCE) · R · Artificial Intelligence · Data Analysis",
+    points: [
+      "Processed and analyzed multi-year NDVI datasets spanning millions of records across the United States, creating a comprehensive dataset for data analysis.",
+      "Independently developed and optimized Google Earth Engine scripts in JavaScript, streamlining geospatial data workflows and improving efficiency.",
+      "Designed and implemented Python-based data pipelines to clean, validate, and interpret large datasets, ensuring data accuracy and reliability.",
+      "Validated extensive datasets in ArcGIS Pro, removing outliers and maintaining the integrity of geospatial analyses.",
+      "Produced detailed reports and visualizations to communicate complex findings, driving actionable insights for stakeholders.",
+    ],
+  },
+  {
+    title: "Application Developer",
+    company_name: "Rogue Credit Union",
+    icon: rcu,
+    iconBg: "#383E56",
+    date: "Sep 2024 - Present",
+    skills: "Oracle SQL · Server Administration · Javascript  · Python",
+    points: [
+      "Manage and optimize large Oracle SQL databases, supporting core banking functions for seamless member services.",
+      "Utilize Fiserv DNA to ensure accurate and secure transaction processing, contributing to system reliability.",
+      "Administer Jira, coordinating with cross-functional teams to resolve and manage high volumes of tickets daily, maintaining a smooth 24/7 Credit Union operation.",
+      "Leverage Atomic Automation for process improvements, driving efficiency and uptime across key systems.",
+      "Communicate effectively with teammates, ensuring projects and support tasks are handled with precision and speed.",
+      "Continuously learn and adapt to new technologies, enhancing overall system performance and personal growth.",
+    ],
+  },
   {
     title: "Software Engineer",
     company_name: "Freelance",
     icon: logo,
     iconBg: "#383E56",
-    date: "Dec 2023 - Present",
-    skills:
-      "JavaScript · React · MongoDB · OpenAI Products · Google Cloud Platform (GCP)",
+    date: "Nov 2023 - Present",
+    skills: "JavaScript · React · MongoDB · OpenAI Products · Google Cloud Platform (GCP)",
     points: [
       "Spearheaded the development of an AR mobile game using React Native and Expo, enhancing client's user engagement on iOS and Android platforms.",
       "Engineered a scalable MongoDB backend hosted on Google Cloud VMs, integrating Google Analytics for enhanced data-driven decision-making.",
@@ -88,7 +120,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Oct 2023 - Mar 2024",
     skills:
-      "Google Earth Engine · JavaScript · R (Programming Language) · Remote Sensing · Data Analysis · Python (Programming Language)",
+      "Google Earth Engine · JavaScript · R · Remote Sensing · Data Analysis · Python",
     points: [
       "Leveraged interpersonal skills to collaborate with various universities, performing a comprehensive analysis of the carbon export for thousands of rivers in the U.S.",
       "Utilized satellite remote sensing and programmed surface reflectance datasets from U.S. rivers in JavaScript, contributing Landsat 8 reflectance bands to develop a geospatial model incorporating data and hydrology to estimate fluxes.",

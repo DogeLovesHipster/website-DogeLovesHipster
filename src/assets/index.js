@@ -26,6 +26,8 @@ import python from "./tech/python.png";
 
 import nasa from "./company/nasa.png";
 import sou from "./company/sou.png";
+import rcu from "./company/rcu.png";
+import usgs from "./company/usgs.png";
 
 import dennys from "./dennys_everyday.png";
 import wordle from "./discord_wordle.png";
@@ -61,6 +63,8 @@ export {
   typescript,
   nasa,
   sou,
+  rcu,
+  usgs,
   dennys,
   wordle,
   rFinal,

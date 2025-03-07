@@ -47,7 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Hey there, I'm Sergio Mendoza. I'm a recent graduate of Environmental Science and Policy with a minor in Computer Science. I love working with JavaScript, Python, and C++ and messing around with whatever new technology I can get my hands on. Currently I am working on creating a React Native mobile game and wrapping up my environmental data analysis project with NASA.
+        Hey there, I'm Sergio Mendoza! Currently I'm working a Application Administrator for Rogue Credit Union and a contractor for USGS where I work as Geospatial Data Engineer that works in Google Earth Engine. I have a deep passion for improving my skills and continuing to learn everything I possibly can.
+
+        For what I've done recently, check out my GameJam game "Itsy Bitsy Climber," or take a look at textbook scraper bot that I developed for Southern Oregon University. For my other projects not readily available, feel free to send me a message and I'd be happy to just talk about my passion projects.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
